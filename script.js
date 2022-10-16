@@ -2,9 +2,9 @@
 
 let varieble = 'Hidden' 
 if (varieble == 'Hidden'){
-    alert("visible")
+    console.log("visible")
 } else{
-    alert("hidden")
+    console.log("hidden")
 }
 
 // 2  Создать переменную и присвоить ей число.
@@ -15,15 +15,11 @@ if (varieble == 'Hidden'){
 
 let number = 1
 if (number == 0){
-    alert(1)
-}
-
-if (number < 0){
-    alert("less then zero")
-}
-
-if (number > 0){
-    alert(number * 10)
+    console.log(number = 1)
+}else if (number < 0){
+    console.log("less then zero")
+}else{
+    console.log(number *= 10)
 }
 
 // 3  Запросите у пользователя число и запишите его в переменную. 
@@ -35,37 +31,30 @@ let number = prompt('Введите число!');
 let message = (number < 5) ? 0 :
     (number > 5) ? 1 ;
 
-alert( message );
+console.log( message );
 
 // 4  Попросить пользователя ввести одно число, следом - второе число. Вывести в консоль максимальное из чисел (наибольшее) с текстом: Большее число: 7 (вместо 7 будет максимальное число из введенных пользователем).
 
-let num1 = prompt('Введите первое число!');
-let num2 = prompt('Введите второе число!');
+let num1 = Number(prompt('Введите первое число!'));
+let num2 = Number(prompt('Введите второе число!'));
 
 if (num1 > num2){
-    alert('Большее число:' + num1)
     console.log('Большее число:' + num1)
-}
-
-if (num2 > num1){
-    alert('Большее число:' + num2)
+}else if (num2 > num1){
     console.log('Большее число:' + num2)
-}
-
-if (num1 == num2){
-    alert('Числа равны!')
+}else{
     console.log('Числа равны!')
 }
 
 // 5  Определить, является ли введенное пользователем число num1 кратным введенному числу num2. Обе переменные запрашиваем у пользователя, ответ выводим в консоль.
 
-let num1 = prompt('Введите первое число!');
-let num2 = prompt('Введите второе число!');
+let num1 = Number(prompt('Введите первое число!'));
+let num2 = Number(prompt('Введите второе число!'));
 
-if (num1 / num2){
-    alert(num1 / num2)
-    console.log(num1 / num2)
-}
+if (num1 % num2){
+    console.log('Да, числа являются кратными')
+}else{
+    console.log('Нет, числа не являются кратными')
 
 // 6  Запросить у пользователя средний балл, записать в переменную.
 // Если средний балл 1-4 - вывести в консоль "Двоечник, иди учись!", если 5-8 - "Неплохо, но давай еще поднажмем!", если 9-10 - "Ого, да ты настоящий отличник!" (можно другие фразы - по желанию).
@@ -89,43 +78,38 @@ if (num1 <= 4){
 // - 75, если балл за экзамен более 50 и количество проектов не менее 2.
 // - 0 во всех других случаях.
 
-let num1 = prompt('Введите баллы за экзамены!');
-let num2 = prompt('Введите количество выполненных проектов!');
+let num1 = Number(prompt('Введите баллы за экзамены!'));
+let num2 = Number(prompt('Введите количество выполненных проектов!'));
 
 if (num1 > 90 || num2 > 10){
-    alert(100)
     console.log(100)
 }else if (num1 > 75 && num2 >= 5){
-    alert(90)
     console.log(90)
 }else if (num1 > 50 && num2 >= 2){
-    alert(75)
     console.log(75)
 } else {
-    alert(0)
     console.log(0)
 }
 
 // 8  День аренды автомобиля стоит $40. При аренде на 7 или больше дней вы получаете общую итоговую скидку $50. Если вы арендуете авто на 3 или более дней, ваша общая скидка составит $20.
 // Количество дней, на которые нужно арендовать авто, запрашиваются с помощью prompt. Напишите программу, рассчитывающую общую стоимость аренды на запрашиваемое количество дней.
 
-let days = prompt('Введите количество дней!');
+let days = Number(prompt('Введите количество дней!'));
 let num1 = 40;
-let num2 = 50;
-let num3 = 20;
+let discount 7days = 50;
+let discount 3days = 20;
  if (days >= 7){
-    alert(days * num1 - num2)
+    console.log(days * num1 - discount 7days)
  } else if (days >= 3){
-    alert(days * num1 - num3)
+    console.log(days * num1 - discount 3days)
  } else{
-    alert(days * num1)
+    console.log(days * num1)
  }
 
 // 9   Создать переменную и записать в нее число, например 10.
 // 10 раз увеличивать значение этой переменной на 1. Результат вывести в консоль.
 
 for (let num=10; num < 10 ; num++){
-   alert(num)
    console.log(num)
 }
 
@@ -134,20 +118,19 @@ for (let num=10; num < 10 ; num++){
 // - проверять, равно ли это число 10. Если равно, выводить "Равно 10". Иначе выводить "Не равно 10"
 
 for (let i = 0; i < 10; i += 2 ){
-    let num = prompt('Введите число!');
+    let num = Number(prompt('Введите число!'));
 if (num == 10){
-    alert('Равно 10')
+    console.log('Равно 10')
 } else {
-    alert('Не равно 10')
+    console.log('Не равно 10')
 }
 }
 
 // 11  Вывести в консоль квадраты чисел от 0 до 100 (не включая 100) - т.е. вывести числа 0, 1, 4, 9, 16...
 
 
-let num = prompt('Введите число!')
+let num = Number(prompt('Введите число!'));
 for (let i = 0; i < num; i++){
-    alert(i * i)
     console.log(i * i)
 }
 
@@ -156,10 +139,10 @@ for (let i = 0; i < num; i++){
 
 for (let i = 0; i < 100; i++){
     if (i % 3){
-        alert('Fizz')
+        console.log('Fizz')
     } else if (i % 5){
-        alert('Buzz')
+        console.log('Buzz')
     } else if (i % 3 && i % 5){
-        alert('FizzBuzz')
+        console.log('FizzBuzz')
     }
 }
