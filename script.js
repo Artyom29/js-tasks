@@ -52,9 +52,9 @@ let num1 = Number(prompt('Введите первое число!'));
 let num2 = Number(prompt('Введите второе число!'));
 
 if (num1 % num2){
-    console.log('Да, числа являются кратными')
-}else{
     console.log('Нет, числа не являются кратными')
+}else{
+    console.log('Да, числа являются кратными')
 
 // 6  Запросить у пользователя средний балл, записать в переменную.
 // Если средний балл 1-4 - вывести в консоль "Двоечник, иди учись!", если 5-8 - "Неплохо, но давай еще поднажмем!", если 9-10 - "Ого, да ты настоящий отличник!" (можно другие фразы - по желанию).
@@ -96,12 +96,12 @@ if (num1 > 90 || num2 > 10){
 
 let days = Number(prompt('Введите количество дней!'));
 let num1 = 40;
-let discount 7days = 50;
-let discount 3days = 20;
+let discountsevdays = 50;
+let discountthreedays = 20;
  if (days >= 7){
-    console.log(days * num1 - discount 7days)
+    console.log(days * num1 - discountsevdays)
  } else if (days >= 3){
-    console.log(days * num1 - discount 3days)
+    console.log(days * num1 - discountthreedays)
  } else{
     console.log(days * num1)
  }
@@ -138,11 +138,11 @@ for (let i = 0; i < num; i++){
 // При этом вместо чисел, кратных трем, программа должна выводить слово «Fizz», а вместо чисел, кратных пяти, — слово «Buzz». Если число кратно и 3, и 5, то программа должна выводить слово «FizzBuzz»
 
 for (let i = 0; i < 100; i++){
-    if (i % 3){
+    if (i % 3 && i % 5){
         console.log('Fizz')
     } else if (i % 5){
         console.log('Buzz')
-    } else if (i % 3 && i % 5){
+    } else if (i % 3){
         console.log('FizzBuzz')
     }
 }
