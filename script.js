@@ -51,7 +51,7 @@ if (num1 > num2){
 let num1 = Number(prompt('Введите первое число!'));
 let num2 = Number(prompt('Введите второе число!'));
 
-if (num1 % num2){
+if (num1 % num2 == 0){
     console.log('Нет, числа не являются кратными')
 }else{
     console.log('Да, числа являются кратными')
