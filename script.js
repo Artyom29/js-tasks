@@ -136,7 +136,7 @@ function getRandomRGB(){ {
     let g = getRandomInteger(0, 255)
     let b = getRandomInteger(0,255)  
 }
-console.log('RGB ${r} + ${g} + ${b}')
+console.log(`RGB(${r},${g},${b})`)
 getRandomRGB()
 
 
