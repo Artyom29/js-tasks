@@ -198,3 +198,7 @@ for(i = 0; i < vegetables.length; i++){
     newveg.push({word:vegetables[i] , length:vegetables[i].length })
 }
 console.log(newveg)
+
+for (i = 0 ; i < vegetables.length; i++){
+console.log( vegetables[i]  + ' - ' + vegetables[i].length)
+}
