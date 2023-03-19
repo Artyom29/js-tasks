@@ -25,7 +25,7 @@ const engineers = {
 }
 
 for(let item in engineers){
-console.log(`Заработная плата: ${} , составляет: ${} рублей`)
+console.log(`Заработная плата: ${item} , составляет: ${engineers[item]} рублей`)
 }
 
 // 3  Создать массив из 5 элементов.
@@ -77,7 +77,9 @@ let questions = [{
     corAnswer: 0,
 }];
 
-
+for (let item of questions){
+    console.log(item + userAnswer)
+}
 
 // 6   Есть массив произвольных чисел:
 // let numbers = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70]
