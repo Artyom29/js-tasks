@@ -78,7 +78,7 @@ let questions = [{
 }];
 
 for (let item of questions){
-    console.log(item + userAnswer)
+   item.usersAnswer = null;
 }
 
 // 6   Есть массив произвольных чисел:
